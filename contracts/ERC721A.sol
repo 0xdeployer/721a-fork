@@ -128,7 +128,7 @@ contract ERC721A is IERC721A {
     mapping(address => uint256) private _packedAddressData;
 
     // Mapping from token ID to approved address.
-    mapping(uint256 => TokenApprovalRef) private _tokenApprovals;
+    mapping(uint256 => TokenApprovalRef) internal _tokenApprovals;
 
     // Mapping from owner to operator approvals
     mapping(address => mapping(address => bool)) private _operatorApprovals;
